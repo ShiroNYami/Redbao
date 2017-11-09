@@ -138,7 +138,7 @@ class say {
 
     }
 
-    void get(String[] name) {
+    protected void get(String[] name) {
         if (total / number < 0.01) {
             System.out.println("钱不够！！");
         } else {
