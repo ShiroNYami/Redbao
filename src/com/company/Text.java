@@ -99,9 +99,8 @@ class lucky {
                 double Q = (Math.random() * (total / number));
                 System.out.println(name[i] + ":" + d2.format(Q) + "元");
                 p -= Q;
-                while (i == 0) {
+                if (i == 0) {
                     m = Q;
-                    break;
                 }
                 if (m == Math.max(Q, m)) {
                     j = i;
@@ -139,7 +138,7 @@ class say {
 
     }
 
-    public void get(String[] name) {
+    void get(String[] name) {
         if (total / number < 0.01) {
             System.out.println("钱不够！！");
         } else {
@@ -149,9 +148,8 @@ class say {
                 double Q = (Math.random() * (total / number));
                 System.out.println(name[i] + ":" + d2.format(Q) + "元");
                 p -= Q;
-                while (i == 0) {
+                if (i == 0) {
                     m = Q;
-                    break;
                 }
                 if (m == Math.max(Q, m)) {
                     j = i;
